@@ -604,6 +604,7 @@ progress {
   height: auto;
 }
 
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -7775,6 +7776,11 @@ textarea.form-control-lg {
   color: #6c757d !important;
 }
 
+.text-yellow {
+  --bs-text-opacity: 1;
+  color: #ffff00 !important;
+}
+
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -11362,7 +11368,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
+  font-size: 1.35rem;
   color: #fff;
   letter-spacing: 0.0625em;
 }
@@ -11410,7 +11416,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/Romania/Hydro3.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
