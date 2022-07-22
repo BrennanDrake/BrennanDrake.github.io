@@ -11573,6 +11573,13 @@ header.masthead .masthead-heading {
   padding: 0 20px 0 100px;
   text-align: left;
 }
+.timeline > li .timeline-panel-pics {
+  position: relative;
+  float: right;
+  width: 50%;
+  padding: 0 100px 0 120px;
+  text-align: left;
+}
 .timeline > li .timeline-panel:before {
   right: auto;
   left: -15px;
