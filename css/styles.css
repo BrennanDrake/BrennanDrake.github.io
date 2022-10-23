@@ -3031,12 +3031,17 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
+  color: rgb(0, 0, 0);
   background-color: #ffc800;
   border-color: #ffc800;
 }
+
+.btn-spacing {
+  padding: 50px
+}
+
 .btn-primary:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
   background-color: #d9aa00;
   border-color: #cca000;
 }
@@ -7778,7 +7783,7 @@ textarea.form-control-lg {
 
 .text-yellow {
   --bs-text-opacity: 1;
-  color: #ffff00 !important;
+  color: #ffc800 !important;
 }
 
 .text-black-50 {
@@ -11308,10 +11313,11 @@ p {
 
 .page-section {
   padding: 6rem 0;
+  margin-top: 1rem;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
@@ -11701,6 +11707,7 @@ header.masthead .masthead-heading {
     padding: 0 20px 20px;
   }
 }
+
 @media (min-width: 1200px) {
   .timeline > li {
     min-height: 170px;
