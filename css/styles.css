@@ -11313,7 +11313,7 @@ p {
 
 .page-section {
   padding: 6rem 0;
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11325,8 +11325,22 @@ p {
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
+
+#skillset {
+  background-image: url("../assets/img/Mexico/Leon.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  }
+
+  section#skillset .section-heading {
+    color: #fff;
+  }
 
 @media (min-width: 768px) {
   section {
@@ -11419,7 +11433,7 @@ p {
 }
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
   text-align: center;
   color: #fff;
   /* background-image: url("../assets/img/Romania/Hydro3.jpg"); */
@@ -11454,7 +11468,7 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 2rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -11876,3 +11890,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: white;
 }
 
+:root{
+  background:#342c74
+}
+
+.transbox{
+  text-align:center;
+  background-color: rgba(126, 126, 126, 0.5);
+}
+
+
+.img_footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
