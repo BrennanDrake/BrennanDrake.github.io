@@ -1,0 +1,21 @@
+---
+layout: default
+title: "{{ page.title }}"
+---
+
+<section class="page-section bg-light" id="blog-post">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">{{ page.title }}</h2>
+            <p>{{ page.date | date: "%B %d, %Y" }}</p>
+        </div>
+
+        <div class="blog-post-content">
+            {{ content }}
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-primary" href="/blog.html">Back to Blog</a>
+        </div>
+    </div>
+</section>

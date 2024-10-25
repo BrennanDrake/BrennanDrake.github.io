@@ -1,3 +1,7 @@
+---
+layout:  blank
+---
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,6 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#skillset"><b>Skillset</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog"><b>Blog</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio"><b>Portfolio</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#education"><b>Education</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#research"><b>Research</b></a></li>
@@ -60,7 +65,7 @@
             <div class="text-center parent">
                 <h4 class="section-heading text-uppercase img_footer bottomimg">Photo Taken On Study Abroad in Romanian Underground Hydroelectric Plant</h2>
             </div>
-        </header>
+        </header>                          
         <!-- Skillset-->
         <section class="page-section" id="skillset">
             <div class="container transbox">
@@ -113,6 +118,25 @@
                 <h4 class="section-heading text-uppercase img_footer ">Photo Taken Working as a deployment engineer in León Mexico</h4>
             </div>
         </section>
+        <!-- Blog Section -->
+        <section class="page-section" id="blog">
+            <div class="container text-center">
+                <h2 class="section-heading text-uppercase">Latest Project Updates</h2>
+                <div class="row">
+                    {% for post in site.posts limit: 2 %}
+                    <div class="col-md-6 blog-post">
+                        {% assign single_post = site.posts[0] %}
+                        <a href="{{ single_post.url }}"><h3>{{ single_post.title }}</h3></a>
+                        <p>{{ post.date | date: "%B %d, %Y" }}</p>
+                        <p>{{ post.excerpt }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="text-center mt-4">
+                    <a class="btn btn-primary" href="blog.html">View All Blog Posts</a>
+                </div>
+            </div>
+        </section>   
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
