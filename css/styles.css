@@ -652,7 +652,7 @@ progress {
     max-width: 720px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
@@ -1319,7 +1319,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -3632,7 +3632,7 @@ textarea.form-control-lg {
     left: auto;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .dropdown-menu-lg-start {
     --bs-position: start;
   }
@@ -4233,7 +4233,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -5203,7 +5203,7 @@ textarea.form-control-lg {
     border-left-width: 1px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 922px) {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -5621,7 +5621,7 @@ textarea.form-control-lg {
     max-width: 300px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
     max-width: 800px;
@@ -6567,7 +6567,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .sticky-lg-top {
     position: -webkit-sticky;
     position: sticky;
@@ -9287,7 +9287,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .float-lg-start {
     float: left !important;
   }
@@ -11402,7 +11402,7 @@ p {
   color: #ffc800;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -11707,7 +11707,7 @@ header.masthead .masthead-heading {
     text-align: left;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 992px) {
   .timeline > li {
     min-height: 150px;
   }
