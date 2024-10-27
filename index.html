@@ -33,8 +33,7 @@ layout:  blank
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#skillset"><b>Skillset</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#blog"><b>Blog</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#updates"><b>Project Updates</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio"><b>Portfolio</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#education"><b>Education</b></a></li>
                         <li class="nav-item"><a class="nav-link" href="#research"><b>Research</b></a></li>
@@ -50,7 +49,7 @@ layout:  blank
                 <div class="masthead-subheading">Hi, I'm Brennan!</div>
                 <div class="masthead-heading text-uppercase">Welcome to my work</div>
                 <!-- <h5 class="section-subheading text-yellow">Site Currently Under Construction</h3> -->
-                <a class="btn btn-primary btn-xl text-uppercase" href="#skillset">Tell Me More</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#updates">Tell Me More</a>
                 <div></div>
             <div class="wrapper">
                 <a href="https://www.linkedin.com/in/brennan-d-59417a127/" class="icon linkedin">
@@ -66,77 +65,52 @@ layout:  blank
                 <h4 class="section-heading text-uppercase img_footer bottomimg">Photo Taken On Study Abroad in Romanian Underground Hydroelectric Plant</h2>
             </div>
         </header>                          
-        <!-- Skillset-->
-        <section class="page-section" id="skillset">
-            <div class="container transbox">
+        <!-- Blog Section (Replacing Skillset Section) -->
+        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: 100%; min-height: 900px; position:relative;">
+            <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Skillset</h2>
-                    <h3 class="section-subheading text-white"></h3>
+                    <h2 class="section-heading text-white text-uppercase" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Latest Project Updates</h2>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3 text-white">Design</h4>
-                        <p class="text-white">Proficient in drafting and CAD Design.
-                            Experienced ranging from most to least in: Solidworks, Solidedge, Onshape, Catia, Autodesk Inventor.
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3 text-white">Prototyping</h4>
-                        <p class="text-white">Skilled in rapid prototyping with additive manufacturing, machine tools, and electrical circuit prototyping and fabrication</p>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-vr-cardboard fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3 text-white">Immersion</h4>
-                        <p class="text-white">In my hobbywork the goal is identical screen accuracy. In my career, this is seen fulfilled through leaving 
-                                              no stone unturned and ensuring that all facets of a project are given the proper time and care.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-list-check fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3 text-white">Project Management and Fulfillment</h4>
-                        <p class="text-white">I am experienced in following a project from formulation and brainstorming with others all the way to implementation. 
-                                              I believe in design for future-proofing. </p>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            <div class="text-center parent">
-                <h4 class="section-heading text-uppercase img_footer ">Photo Taken Working as a deployment engineer in León Mexico</h4>
-            </div>
-        </section>
-        <!-- Blog Section -->
-        <section class="page-section" id="blog">
-            <div class="container text-center">
-                <h2 class="section-heading text-uppercase">Latest Project Updates</h2>
                 <div class="row">
-                    {% for post in site.posts limit: 2 %}
-                    <div class="col-md-6 blog-post">
-                        {% assign single_post = site.posts[0] %}
-                        <a href="{{ single_post.url }}"><h3>{{ single_post.title }}</h3></a>
-                        <p>{{ post.date | date: "%B %d, %Y" }}</p>
-                        <p>{{ post.excerpt }}</p>
+                    <!-- Left card: Post with a specific title -->
+                    <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        {% assign specific_post = nil %}
+                        {% for post in site.posts %}
+                            {% if post.title == "Project Goals V1.0" %}
+                                {% assign specific_post = post %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                
+                        {% if specific_post %}
+                            <a href="{{ specific_post.url }}">
+                                <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">{{ specific_post.title }}</h3>
+                            </a>
+                            <p class="text-muted">{{ specific_post.date | date: "%B %d, %Y" }}</p>
+                            <p class="text-muted">{{ specific_post.excerpt }}</p>
+                        {% else %}
+                            <p>No post found with the specified title.</p>
+                        {% endif %}
                     </div>
-                    {% endfor %}
+                
+                    <!-- Right card: Most recent post -->
+                    <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        {% assign latest_post = site.posts | first %}
+                        <a href="{{ latest_post.url }}">
+                            <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">{{ latest_post.title }}</h3>
+                        </a>
+                        <p class="text-muted">{{ latest_post.date | date: "%B %d, %Y" }}</p>
+                        <p class="text-muted">{{ latest_post.excerpt }}</p>
+                    </div>
                 </div>
                 <div class="text-center mt-4">
-                    <a class="btn btn-primary" href="blog.html">View All Blog Posts</a>
+                    <a class="btn btn-primary" href="blog.html">View All Posts</a>
                 </div>
             </div>
-        </section>   
+            <div class="text-center parent text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); position: absolute; bottom: 0; width: 100%; padding-bottom: 10px;">
+                <h4 class="section-heading text-uppercase img_footer bottomimg">Photo Taken On Deployment in León Mexico</h2>
+            </div>
+        </section>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
@@ -263,7 +237,7 @@ layout:  blank
                     <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/education/honors.png" alt="..." />
-                            <h4>Honors Program</h4>
+                            <h4>Honors College</h4>
                             <p class="text-muted">Rigorous Classes and Research</p>
                         </div>
                     </div>

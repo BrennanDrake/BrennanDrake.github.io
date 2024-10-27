@@ -1,0 +1,25 @@
+I"=<h2 id="current-project-goals">Current Project Goals</h2>
+
+<ol>
+  <li><strong>Containerize Turtlebot3_bringup and RFID capture code</strong>
+    <ul>
+      <li>Allow for easier development with docker images saved on server registry</li>
+    </ul>
+  </li>
+  <li><strong>Containerize SLAM_TOOLBOX in VSCode dev container for easier development</strong>
+    <ul>
+      <li>By doing this, I’ll have a backup image / baseline to work off of.</li>
+    </ul>
+  </li>
+  <li><strong>Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
+    <ul>
+      <li>RFID assembly I have from my undergrad outputs a detection event and a unique ID</li>
+    </ul>
+  </li>
+  <li><strong>Simulate humanoid robot from existing resources in Gazebo</strong>
+    <ul>
+      <li>Investigate gait algorithms</li>
+    </ul>
+  </li>
+</ol>
+:ET

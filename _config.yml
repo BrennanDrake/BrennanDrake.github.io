@@ -19,3 +19,8 @@ plugins:
 
 future: true
 paginate: 5
+
+kramdown:
+  hard_wrap: true
+
+excerpt_separator: "<!-- more -->"
