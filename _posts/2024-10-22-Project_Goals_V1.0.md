@@ -6,7 +6,7 @@ date: 2024-10-23
 
 ## Current Project Goals
 
-1. **Containerize Turtlebot3_bringup and RFID capture code**
+1. **[COMPLETED] Containerize Turtlebot3_bringup and RFID capture code**
    - Allow for easier development with docker images saved on server registry
    
 2. **Containerize SLAM_TOOLBOX in VSCode dev container for easier development**
@@ -17,3 +17,5 @@ date: 2024-10-23
 
 4. **Simulate humanoid robot from existing resources in Gazebo**
    - Investigate gait algorithms
+
+<img src="assets/img/Turtlebot/onshape_turtlebot_formatted.png" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:300px;" />

@@ -1,0 +1,6 @@
+I"Æ<p><strong>Todayâ€™s Summary:</strong><br />
+I set up a spare Raspberry Pi 4B+ as a Docker image registry server, configured to run automatically on power-up and accessible over my home Wi-Fi. Additionally, I reinstalled the fan I pilfered from the Pi case I am now using for docker and connected a 12V fan to the buck converter used to power the Arduino. Finally, I integrated my custom RFID publishing package into the turtlebot3_bringup_custom package. This package processes serial data from the RFID assembly and publishes detected IDs to the /rfid topic.</p>
+
+<p><img src="assets/blog/Nov24/cooldown.jpg" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:400px;" /></p>
+
+:ET

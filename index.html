@@ -66,7 +66,7 @@ layout:  blank
             </div>
         </header>                          
         <!-- Blog Section (Replacing Skillset Section) -->
-        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: 100%; min-height: 800px; position:relative;">
+        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: 104%; min-height: 800px; position:relative; padding-top:3rem;">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-white text-uppercase" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Latest Project Updates</h2>
@@ -96,11 +96,12 @@ layout:  blank
                     <!-- Right card: Most recent post -->
                     <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
                         {% assign latest_post = site.posts | first %}
-                        <a href="{{ latest_post.url }}">
+                        <a href="{{ latest_post.url | relative_url }}">
                             <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">{{ latest_post.title }}</h3>
                         </a>
                         <p class="text-muted">{{ latest_post.date | date: "%B %d, %Y" }}</p>
                         <p class="text-muted">{{ latest_post.excerpt }}</p>
+                        <a href="{{ latest_post.url | relative_url }}" class="btn btn-primary" style="display: block; margin: 0 auto; width:100%; max-width:150px;">Read More</a>
                     </div>
                 </div>
                 <div class="text-center mt-4">
@@ -112,7 +113,7 @@ layout:  blank
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="portfolio" style="padding:3rem">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>

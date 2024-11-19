@@ -70,7 +70,7 @@
             </div>
         </header>                          
         <!-- Blog Section (Replacing Skillset Section) -->
-        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: 100%; min-height: 900px; position:relative;">
+        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: 104%; min-height: 800px; position:relative; padding-top:3rem;">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-white text-uppercase" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Latest Project Updates</h2>
@@ -79,6 +79,8 @@
                     <!-- Left card: Post with a specific title -->
                     <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
                         
+                        
+                            
                         
                             
                         
@@ -94,7 +96,7 @@
                             <p class="text-muted"><h2 id="current-project-goals">Current Project Goals</h2>
 
 <ol>
-  <li><strong>Containerize Turtlebot3_bringup and RFID capture code</strong>
+  <li><strong>[COMPLETED] Containerize Turtlebot3_bringup and RFID capture code</strong>
     <ul>
       <li>Allow for easier development with docker images saved on server registry</li>
     </ul>
@@ -115,6 +117,8 @@
     </ul>
   </li>
 </ol>
+
+<p><img src="assets/img/Turtlebot/onshape_turtlebot_formatted.png" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:300px;" /></p>
 </p>
                         
                     </div>
@@ -122,12 +126,17 @@
                     <!-- Right card: Most recent post -->
                     <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
                         
-                        <a href="/Containerization.html">
-                            <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Containerization</h3>
+                        <a href="/cooldown.html">
+                            <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Cool Down / Integration</h3>
                         </a>
-                        <p class="text-muted">October 24, 2024</p>
-                        <p class="text-muted"><p>I have recently decided to develop a project tracking section for my own personal documentation but also as a cool way to share my work. I will update this periodically with major milestones.</p>
+                        <p class="text-muted">November 16, 2024</p>
+                        <p class="text-muted"><p><strong>Today’s Summary:</strong><br />
+I set up a spare Raspberry Pi 4B+ as a Docker image registry server, configured to run automatically on power-up and accessible over my home Wi-Fi. Additionally, I reinstalled the fan I pilfered from the Pi case I am now using for docker and connected a 12V fan to the buck converter used to power the Arduino. Finally, I integrated my custom RFID publishing package into the turtlebot3_bringup_custom package. This package processes serial data from the RFID assembly and publishes detected IDs to the /rfid topic.</p>
+
+<p><img src="assets/blog/Nov24/cooldown.jpg" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:400px;" /></p>
+
 </p>
+                        <a href="/cooldown.html" class="btn btn-primary" style="display: block; margin: 0 auto; width:100%; max-width:150px;">Read More</a>
                     </div>
                 </div>
                 <div class="text-center mt-4">
@@ -139,7 +148,7 @@
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="portfolio" style="padding:3rem">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
@@ -153,6 +162,21 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
+                                <img class="img-fluid" src="assets/img/portfolio/elephant.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Autonomous Elephant</div>
+                                <div class="portfolio-caption-subheading text-muted">Professional</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
                                 <img class="img-fluid" src="assets/img/portfolio/MINC.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
@@ -162,9 +186,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
+                        <!-- Portfolio item 3-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -177,9 +201,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
+                        <!-- Portfolio item 4-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -192,9 +216,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
+                        <!-- Portfolio item 5-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -209,9 +233,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
+                        <!-- Portfolio item 6-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -220,21 +244,6 @@
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Manufacturing Experience</div>
                                 <div class="portfolio-caption-subheading text-muted">Heatcraft Refrigeration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/EMG1.PNG" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Animatronic EMG Testing</div>
-                                <div class="portfolio-caption-subheading text-muted">Hobby</div>
                             </div>
                         </div>
                     </div>
@@ -344,7 +353,7 @@
                                 <h4 class="subheading">Systems Safety Engineer</h4>
                                 <h4 class="subheading">Gulfstream Aerospace</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">One area I grew working as a Systems Safety Engineer was in reading comprehension of technical documentation. Systems Safety Engineers are responsible for making sure that every step of validation, verification, and certification of aircraft systems are documented and thoroughly assessed by the approriate subject matter experts. I was able to contirbute to certification of aircraft by taking responsibility for the lighting system which entailed drafting and/or developing System Safety Assessment, Fault Hazard Assessment, and Fault Tree analysis documents.</p></div>
+                            <div class="timeline-body"><p class="text-muted">One area I grew working as a Systems Safety Engineer was in reading comprehension of technical documentation. Systems Safety Engineers are responsible for making sure that every step of validation, verification, and certification of aircraft systems are documented and thoroughly assessed by the appropriate subject matter experts. I was able to contribute to certification of aircraft by taking responsibility for the lighting system which entailed drafting and/or developing System Safety Assessment, Fault Hazard Assessment, and Fault Tree analysis documents.</p></div>
                         </div>
                     </li>
                     <li>
@@ -395,8 +404,53 @@
             </div>
         </footer>
         <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+         <!-- Portfolio item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Autonomous Elephant</h2>
+                                    <p class="item-intro text-muted"></p>
+                                    <div class="list-group-horizontal">
+                                        <div id="row justify-content-center">
+                                            <div class="video-wrapper">
+                                                <video id="elephant" controls>
+                                                    <source src="assets/img/portfolio/elephant2.mp4" type="video/mp4" />
+                                                </video>
+                                            </div>
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/elephant_platform.png" alt="..." />
+                                            <div class="clear"></div> 
+                                        </div>
+                                    </div>
+                                    <p>In the fall of 2024, wheel.me (with our tagline of "Autonomous Anything") partnered with two artists: Steve and Dorota Coy to make the world's first fully autonomous amr elephant. In this project, I designed the t-slot extrusion frame which we mounted our robots to and the elephant to. In addition, I remotely piloted the robot using basic ros topic publishing to maintain the disco-ball effect and when later showcasing in a fully lit area, I calibrated, mapped, and set the system up for autonomous navigation.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Skills Used Most:</strong>
+                                            Material Sourcing, CAD Design, ROS CLI operation, entertainment puppeteering
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Professional
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -442,8 +496,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -481,8 +535,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -542,8 +596,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -581,8 +635,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -611,56 +665,6 @@
                                         <li>
                                             <strong>Category:</strong>
                                             Professional
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">EMG Animatronics Testing</h2>
-                                    <p class="item-intro text-muted"></p>
-                                    <div class="list-group-horizontal">
-                                        <div id="wrapper"> 
-                                            <video id="EMG2" width="400" height=auto controls="controls" > 
-                                                <source type="video/mp4" src="assets/img/portfolio/EMG2.mp4" /> 
-                                            </video>
-                                            <video id="EMG3" width="400" height=auto controls="controls" > 
-                                                <source type="video/mp4" src="assets/img/portfolio/EMG3.mp4" /> 
-                                            </video>
-                                            <div class="clear"></div> 
-                                        </div>
-                                        
-                                    </div>
-                                    <p>To Be Completed</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Skills Used Most:</strong>
-                                            Arduino coding, 3D Printing, CAD Design (Solidworks), GPIO integration
-                                        </li>
-                                        <li>
-                                            <strong>Tools and Software:</strong>
-                                            MyoWare Muscle Sensor, Arduino Uno, CR10-Mini 3D Printer, Servos, Arduino IDE
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Hobby
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
