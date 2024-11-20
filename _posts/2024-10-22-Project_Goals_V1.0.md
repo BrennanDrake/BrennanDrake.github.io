@@ -12,7 +12,7 @@ date: 2024-10-23
 2. **Containerize SLAM_TOOLBOX in VSCode dev container for easier development**
    - By doing this, I'll have a backup image / baseline to work off of.
    
-3. **Integrate RFID detection events into SLAM_Toolbox as landmarks**
+3. **[IN PROGRESS] Integrate RFID detection events into SLAM_Toolbox as landmarks**
    - RFID assembly I have from my undergrad outputs a detection event and a unique ID
 
 4. **Simulate humanoid robot from existing resources in Gazebo**
