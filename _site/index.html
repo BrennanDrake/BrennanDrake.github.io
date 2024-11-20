@@ -85,6 +85,8 @@
                             
                         
                             
+                        
+                            
                                 
                                 
                 
@@ -106,7 +108,7 @@
       <li>By doing this, I’ll have a backup image / baseline to work off of.</li>
     </ul>
   </li>
-  <li><strong>Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
+  <li><strong>[IN PROGRESS] Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
     <ul>
       <li>RFID assembly I have from my undergrad outputs a detection event and a unique ID</li>
     </ul>
@@ -126,17 +128,21 @@
                     <!-- Right card: Most recent post -->
                     <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
                         
-                        <a href="/cooldown.html">
-                            <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Cool Down / Integration</h3>
+                        <a href="/landmarks.html">
+                            <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Landmarks</h3>
                         </a>
-                        <p class="text-muted">November 16, 2024</p>
-                        <p class="text-muted"><p><strong>Today’s Summary:</strong><br />
-I set up a spare Raspberry Pi 4B+ as a Docker image registry server, configured to run automatically on power-up and accessible over my home Wi-Fi. Additionally, I reinstalled the fan I pilfered from the Pi case I am now using for docker and connected a 12V fan to the buck converter used to power the Arduino. Finally, I integrated my custom RFID publishing package into the turtlebot3_bringup_custom package. This package processes serial data from the RFID assembly and publishes detected IDs to the /rfid topic.</p>
+                        <p class="text-muted">November 19, 2024</p>
+                        <p class="text-muted; img-fluid;" ><p><strong>Today’s Summary:</strong><br />
+Today I implemented an rfid_landmark node that would publish the transform from the map frame to the PN5180 RFID reader’s frame for rfid detection events. As you can see in the video below, there is a lot of tolerance for that detection, and so the landmark moves with the robot a bit. In addition, you can see that the landmark is preexisting at the beginning of the video but rather than localizing the robot, the detection frame moves itself. This will be addressed soon. Immediate objectives are in the full post.</p>
 
-<p><img src="assets/blog/Nov24/cooldown.jpg" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:400px;" /></p>
+<div class="video-container" style="max-width: 100%; margin: 0 auto;">
+    <video id="Nov19" controls="" style="max-width: 100%; height: auto; display: block;">
+        <source src="assets/blog/Nov24/Nov19.mp4" type="video/mp4" style="width:300px" />
+    </video>
+</div>
 
 </p>
-                        <a href="/cooldown.html" class="btn btn-primary" style="display: block; margin: 0 auto; width:100%; max-width:150px;">Read More</a>
+                        <a href="/landmarks.html" class="btn btn-primary" style="display: block; margin: 0 auto; width:100%; max-width:150px;">Read More</a>
                     </div>
                 </div>
                 <div class="text-center mt-4">

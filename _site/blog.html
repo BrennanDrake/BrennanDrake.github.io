@@ -42,6 +42,21 @@
         <div class="row">
             
             <div class="col-md-12 blog-post">
+                <a href="/landmarks.html"><h3>Landmarks</h3></a>
+                <p>November 19, 2024</p>
+                <p><p><strong>Today’s Summary:</strong><br />
+Today I implemented an rfid_landmark node that would publish the transform from the map frame to the PN5180 RFID reader’s frame for rfid detection events. As you can see in the video below, there is a lot of tolerance for that detection, and so the landmark moves with the robot a bit. In addition, you can see that the landmark is preexisting at the beginning of the video but rather than localizing the robot, the detection frame moves itself. This will be addressed soon. Immediate objectives are in the full post.</p>
+
+<div class="video-container" style="max-width: 100%; margin: 0 auto;">
+    <video id="Nov19" controls="" style="max-width: 100%; height: auto; display: block;">
+        <source src="assets/blog/Nov24/Nov19.mp4" type="video/mp4" style="width:300px" />
+    </video>
+</div>
+
+</p>
+            </div>
+            
+            <div class="col-md-12 blog-post">
                 <a href="/cooldown.html"><h3>Cool Down / Integration</h3></a>
                 <p>November 16, 2024</p>
                 <p><p><strong>Today’s Summary:</strong><br />
@@ -78,7 +93,7 @@ I set up a spare Raspberry Pi 4B+ as a Docker image registry server, configured 
       <li>By doing this, I’ll have a backup image / baseline to work off of.</li>
     </ul>
   </li>
-  <li><strong>Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
+  <li><strong>[IN PROGRESS] Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
     <ul>
       <li>RFID assembly I have from my undergrad outputs a detection event and a unique ID</li>
     </ul>

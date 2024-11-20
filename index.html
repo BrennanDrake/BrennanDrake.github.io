@@ -100,7 +100,7 @@ layout:  blank
                             <h3 class="text-primary text-uppercase" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">{{ latest_post.title }}</h3>
                         </a>
                         <p class="text-muted">{{ latest_post.date | date: "%B %d, %Y" }}</p>
-                        <p class="text-muted">{{ latest_post.excerpt }}</p>
+                        <p class="text-muted; img-fluid;" >{{ latest_post.excerpt }}</p>
                         <a href="{{ latest_post.url | relative_url }}" class="btn btn-primary" style="display: block; margin: 0 auto; width:100%; max-width:150px;">Read More</a>
                     </div>
                 </div>
