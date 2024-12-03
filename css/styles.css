@@ -12005,7 +12005,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 @media (max-width: 576px) {
-  .blog-post {
+  .container .row .blog-post {
     margin: 10px auto; /* Center the blog post horizontally */
     width: 100% !important; /* Make it stretch to the full container width */
     max-width: 100%; /* Remove any constraints */
