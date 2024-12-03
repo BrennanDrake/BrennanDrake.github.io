@@ -1111,12 +1111,6 @@ progress {
     flex: 1 0 0%;
   }
 
-/* CUSTOM */
-  .blog-post:nth-child(2) { /* Target the second blog post */
-    display: none;
-  }
-/**/
-
   .row-cols-md-auto > * {
     flex: 0 0 auto;
     width: auto;
@@ -2144,6 +2138,11 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  /* CUSTOM */
+  .blog-post:nth-child(2) { /* Target the second blog post */
+    display: none;
+  }
+/**/
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
