@@ -2142,6 +2142,10 @@ progress {
   .blog-post:nth-child(2) { /* Target the second blog post */
     display: none;
   }
+  .custom-row {
+    margin-right: 0;
+    margin-left: 0;
+  }
 /**/
 }
 @media (max-width: 991.98px) {
