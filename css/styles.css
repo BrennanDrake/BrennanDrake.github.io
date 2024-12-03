@@ -2142,10 +2142,6 @@ progress {
   .blog-post:nth-child(2) { /* Target the second blog post */
     display: none;
   }
-  .custom-row {
-    margin-right: 0;
-    margin-left: 0;
-  }
 /**/
 }
 @media (max-width: 991.98px) {
@@ -12010,8 +12006,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 @media (max-width: 576px) {
   .blog-post {
-      margin: 0 auto;
-      text-align: center;
+    margin: 10px auto; /* Center the blog post horizontally */
+    width: 100%; /* Make it stretch to the full container width */
+    max-width: 100%; /* Remove any constraints */
   }
 }
 

@@ -71,9 +71,9 @@ layout:  blank
                 <div class="text-center">
                     <h2 class="section-heading text-white text-uppercase" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Latest Project Updates</h2>
                 </div>
-                <div class="custom-row row">
+                <div class="row">
                     <!-- Left card: Post with a specific title -->
-                    <div class="col-12 col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <div class="col-md-12 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
                         {% assign specific_post = nil %}
                         {% for post in site.posts %}
                             {% if post.title == "Project Goals V1.0" %}
