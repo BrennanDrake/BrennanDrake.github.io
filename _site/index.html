@@ -70,14 +70,14 @@
             </div>
         </header>                          
         <!-- Blog Section (Replacing Skillset Section) -->
-        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: 104%; min-height: 800px; position:relative; padding-top:3rem;">
+        <section class="page-section" id="updates" style="background: url('assets/img/Mexico/Leon.jpg') no-repeat center center; background-size: cover; min-height: 800px; position:relative; padding-top:3rem;">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-white text-uppercase" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Latest Project Updates</h2>
                 </div>
                 <div class="row">
                     <!-- Left card: Post with a specific title -->
-                    <div class="col-md-6 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <div class="col-md-12 blog-post" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
                         
                         
                             
@@ -103,19 +103,19 @@
       <li>Allow for easier development with docker images saved on server registry</li>
     </ul>
   </li>
-  <li><strong>Containerize SLAM_TOOLBOX in VSCode dev container for easier development</strong>
+  <li><strong>[IN PROGRESS] Containerize rtabmap in VSCode dev container for easier development</strong>
     <ul>
       <li>By doing this, I’ll have a backup image / baseline to work off of.</li>
     </ul>
   </li>
-  <li><strong>[IN PROGRESS] Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
+  <li><strong>[COMPLETED] Create node to output RFID detection events as landmarks</strong>
     <ul>
-      <li>RFID assembly I have from my undergrad outputs a detection event and a unique ID</li>
+      <li>Tie the RFID tag ID to the location transform from the map frame at the instant of detection</li>
     </ul>
   </li>
-  <li><strong>Simulate humanoid robot from existing resources in Gazebo</strong>
+  <li><strong>[IN PROGRESS] Integrate RFID detection events into rtabmap as landmarks</strong>
     <ul>
-      <li>Investigate gait algorithms</li>
+      <li>Save detections with the map and use them for relocalization</li>
     </ul>
   </li>
 </ol>

@@ -12007,7 +12007,21 @@ section#contact form#contactForm :-ms-input-placeholder {
 @media (max-width: 576px) {
   .blog-post {
     margin: 10px auto !important; /* Center the blog post horizontally */
-    width: 100% !important; /* Make it stretch to the full container width */
+    width: 90% !important; /* Make it stretch to the full container width */
+    max-width: 100% !important; /* Remove any constraints */
+  }
+}
+@media (max-width: 768px) {
+  .blog-post {
+    margin: 10px auto !important; /* Center the blog post horizontally */
+    width: 90% !important; /* Make it stretch to the full container width */
+    max-width: 100% !important; /* Remove any constraints */
+  }
+}
+@media (max-width: 960px) {
+  .blog-post {
+    margin: 10px auto !important; /* Center the blog post horizontally */
+    width: 90% !important; /* Make it stretch to the full container width */
     max-width: 100% !important; /* Remove any constraints */
   }
 }

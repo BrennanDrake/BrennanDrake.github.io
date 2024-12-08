@@ -88,19 +88,19 @@ I set up a spare Raspberry Pi 4B+ as a Docker image registry server, configured 
       <li>Allow for easier development with docker images saved on server registry</li>
     </ul>
   </li>
-  <li><strong>Containerize SLAM_TOOLBOX in VSCode dev container for easier development</strong>
+  <li><strong>[IN PROGRESS] Containerize rtabmap in VSCode dev container for easier development</strong>
     <ul>
       <li>By doing this, I’ll have a backup image / baseline to work off of.</li>
     </ul>
   </li>
-  <li><strong>[IN PROGRESS] Integrate RFID detection events into SLAM_Toolbox as landmarks</strong>
+  <li><strong>[COMPLETED] Create node to output RFID detection events as landmarks</strong>
     <ul>
-      <li>RFID assembly I have from my undergrad outputs a detection event and a unique ID</li>
+      <li>Tie the RFID tag ID to the location transform from the map frame at the instant of detection</li>
     </ul>
   </li>
-  <li><strong>Simulate humanoid robot from existing resources in Gazebo</strong>
+  <li><strong>[IN PROGRESS] Integrate RFID detection events into rtabmap as landmarks</strong>
     <ul>
-      <li>Investigate gait algorithms</li>
+      <li>Save detections with the map and use them for relocalization</li>
     </ul>
   </li>
 </ol>
