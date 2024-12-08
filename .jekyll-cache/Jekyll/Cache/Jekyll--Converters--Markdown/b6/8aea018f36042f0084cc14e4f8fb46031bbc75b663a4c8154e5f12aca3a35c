@@ -1,0 +1,33 @@
+I"�<h2 id="current-project-goals">Current Project Goals</h2>
+
+<ol>
+  <li><strong>[COMPLETED] Containerize Turtlebot3_bringup and RFID capture code</strong>
+    <ul>
+      <li>Allow for easier development with docker images saved on server registry</li>
+    </ul>
+  </li>
+  <li><strong>[IN PROGRESS] Containerize rtabmap in VSCode dev container for easier development</strong>
+    <ul>
+      <li>By doing this, I’ll have a backup image / baseline to work off of.</li>
+    </ul>
+  </li>
+  <li><strong>[COMPLETED] Create node to output RFID detection events as landmarks</strong>
+    <ul>
+      <li>Tie the RFID tag ID to the location transform from the map frame at the instant of detection</li>
+    </ul>
+  </li>
+  <li><strong>[IN PROGRESS] Integrate RFID detection events into rtabmap as landmarks</strong>
+    <ul>
+      <li>Save detections with the map and use them for relocalization</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="assets/img/Turtlebot/onshape_turtlebot_formatted.png" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:300px;" /></p>
+
+<!-- more -->
+<footer>
+    Blog content © [Your Name], [Year]. Licensed under a 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 License</a>.
+</footer>
+:ET

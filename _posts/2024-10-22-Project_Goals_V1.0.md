@@ -19,3 +19,11 @@ date: 2024-10-23
    - Save detections with the map and use them for relocalization
 
 <img src="assets/img/Turtlebot/onshape_turtlebot_formatted.png" alt="Docker cmd line" style="display: block; margin: 0 auto; width:100%; max-width:300px;" />
+
+<!-- more -->
+<br>
+<br>
+<footer>
+    Blog content © Brennan Drake, 2024. Licensed under a 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 License</a>.
+</footer>

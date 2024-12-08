@@ -8,3 +8,11 @@ This past weekend, I was able to transfer all of the basic code on the turtlebot
 
 I have also started to do my development inside of a vscode dev container. This allows me to easily contain all of my dependencies and maintain operation regardless of device used. I plan to eventually experiment with using this on a steam deck running linux.
 
+<!-- more -->
+
+<br>
+<br>
+<footer>
+    Blog content © Brennan Drake, 2024. Licensed under a 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 License</a>.
+</footer>
